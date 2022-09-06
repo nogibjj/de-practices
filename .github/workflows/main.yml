@@ -1,4 +1,4 @@
-name: Python application test with Github Actions
+name: Python application test with Github Actions using devcontainers
 
 on: [push]
 
@@ -16,3 +16,5 @@ jobs:
     - name: Install dependencies
       run: |
         make install
+        make lint
+        make format
